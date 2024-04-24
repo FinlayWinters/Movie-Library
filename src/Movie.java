@@ -9,12 +9,12 @@ public class Movie
 
 
 
-    public Movie(String aTile, int aRunningtime, Genre aGenre, int aMinutes)
+    public Movie(String aTile, int aRunningTime, Genre aGenre)
     {
         this.title = aTile;
-        this.runningTime = aRunningtime;
+        this.runningTime = aRunningTime;
         this.genre = aGenre;
-        this.minutes = aMinutes;
+        this.minutes = aRunningTime;
 
     }
 
@@ -34,7 +34,7 @@ public class Movie
     }
     public void showInfo()
     {
-        String movieInfo = this.getTitle() + "," + this.getGenre() + "," - "running time;" + this.getRunningTime() + "minutes";
+        String movieInfo = this.getTitle() + "," + this.getGenre() + ", running time;" + this.getRunningTime() + "minutes";
         System.out.println(title);
         System.out.println(genre);
         System.out.println(runningTime);

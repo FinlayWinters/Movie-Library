@@ -1,12 +1,13 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-public class Main {
+public class Main
+{
     public static void main(String[] args)
     {
-        Movie m = new movie( "The Blair witch project"), 82, .HORROR);
+        Movie m = new Movie("The Blair witch project", 82, Genre.HORROR);
 
 
 
-        }
+
     }
 }
