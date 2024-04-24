@@ -10,6 +10,6 @@ public class InputReader
 
     public String getInput()
     {
-        return this.scanner.nextline();
+        return this.scanner.nextLine();
     }
 }
