@@ -26,19 +26,19 @@ public class UserInterface
             switch (userInput)
             {
                 case "1":
-                addMovie();
+                    addMovie();
                     break;
                 case "2":
-                //this.showAllMovies();
+                    this.listMovies();
                     break;
                 case "3":
-                //this.movieCount();
+                    this.showMovieCount();
                     break;
-                case "0",
-                quit = true:
-                break;
-            default
-            System.out.println("That was not a valid choice");
+                case "0":
+                    quit = true;
+                    break;
+                default:
+                    System.out.println("That was not a valid choice");
 
 
             }
@@ -68,8 +68,7 @@ public class UserInterface
 
         userInput = reader.getInput();
 
-        int genreNumber;
-        -1;
+        int genreNumber = -1;
 
         try {
             runningTime = Integer.parseInt(userInput);
@@ -83,7 +82,7 @@ public class UserInterface
             return;
         }
 
-        Genre genre;
+        Genre genre = Genre.COMEDY;
 
         switch (genreNumber) {
             case 1:
